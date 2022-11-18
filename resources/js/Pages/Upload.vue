@@ -68,7 +68,7 @@ const submit = (e) => {
                     `;
                     document.querySelector("#alerts").appendChild(alertSuccess);
 
-                    var pusher = new Pusher("7b3702a5d9470d4f46ca", {
+                    var pusher = new Pusher("6fc026baacbfe5437fbe", {
                         cluster: "us2",
                     });
                     var channel = pusher.subscribe("file-process." + res.data.upload_id);
